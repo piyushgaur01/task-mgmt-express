@@ -1,0 +1,38 @@
+{
+  "name": "task-mgmt-express",
+  "version": "1.0.0",
+  "description": "This project involves creating a basic task management application with features for creating, assigning, updating, and deleting tasks. It will cover key aspects of backend development (API creation, database interaction) and frontend development (UI rendering, state management).",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon --watch 'src/**/*.ts' --exec ts-node src/index.ts",
+    "prestart": "npm run build",
+    "predev": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piyushgaur01/task-mgmt-express.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/piyushgaur01/task-mgmt-express/issues"
+  },
+  "homepage": "https://github.com/piyushgaur01/task-mgmt-express#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "pg": "^8.16.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.15.18",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
